@@ -1,0 +1,32 @@
+{{ define "title" }}
+  {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+
+
+{{ define "main" }}
+<!-- list template -->
+<div>
+
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  {{/*  {{ range .Paginator.Pages }}  */}}
+  {{ range (.Paginator 50 ).Pages }}
+    <!-- single page card -->
+    {{ partial "card.list.html" . }}
+  {{ end }}
+
+  <!-- paginator nav -->
+  {{ partial "paginator.html" . }}
+
+
+</div>
+
+{{ end }}
+
+
+{{ define "side" }}
+  {{ partial "side.taxonomy.html" . }}
+{{ end }}
+
+

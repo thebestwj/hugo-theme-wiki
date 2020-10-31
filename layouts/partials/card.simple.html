@@ -1,0 +1,13 @@
+<!-- single page card -->
+<div class="rounded-2 box-shadow-medium px-3 pb-2 pt-2 mb-3">
+        <a href="{{ .RelPermalink }}">
+          <div>{{ .Title }}</div>
+        </a>
+      <div class="Subhead-description">
+        {{ partial "taxonomy.html" . }}
+        <div class="float-md-right">
+          <span>{{ .Date.Format "2006-01-02" }}</span>
+        </div>
+      </div>
+</div>
+  

@@ -1,0 +1,15 @@
+{{ define "title" }}
+  {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+
+
+{{ define "main" }}
+
+{{ partial "list.html" . }}
+
+{{ end }}
+
+
+{{ define "side" }}
+  {{ partial "side.taxonomy.html" . }}
+{{ end }}

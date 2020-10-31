@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+
+name = "hugo-theme-wiki"
+license = "MIT"
+licenselink = "https://github.com/thebestwj/hugo-theme-wiki"
+description = "A simple and beautiful Hugo theme based on GitHub's Primer CSS"
+homepage = "https://github.com/thebestwj/hugo-theme-wiki"
+tags = ["blog", "simple", "minimal", "clean", "personal", "syntax highlighting", "white", "light", "simple page", "technical"]
+features = ["blog", "toc", "code pen", "syntax highlighting", "math", "math inline", "tags", "categories", "social", "share", "share button", "social share"]
+# Hugo version
+min_version = 0.40
+
+[author]
+  name = "thebestwj"
+  homepage = "https://github.com/thebestwj/hugo-theme-wiki"
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""
